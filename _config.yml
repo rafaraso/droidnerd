@@ -9,7 +9,6 @@
 locale                   : "pt-BR"
 title                    : "DroidNerd"
 title_separator          : "-"
-logo                     : "/images/logo-droidnerd.png"
 name                     : "Rafael Raso"
 description              : "Alguns exemplos para desenvolvedores Android."
 url                      : "https://rafaraso.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -183,6 +182,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-github-metadata
 
 # mimic GitHub Pages with --safe
 whitelist:
