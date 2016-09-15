@@ -9,11 +9,12 @@
 locale                   : "pt-BR"
 title                    : "DroidNerd"
 title_separator          : "-"
+logo                     : "/images/logo-droidnerd.png"
 name                     : "Rafael Raso"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+description              : "Alguns exemplos para desenvolvedores Android."
+url                      : "https://rafaraso.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/droidnerd" # the subpath of your site, e.g. "/blog"
+repository               : "rafaraso/droidnerd" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -79,20 +80,20 @@ analytics:
 author:
   name             : "Rafael Raso"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  bio              : "O Desenvolvedor Java EE & Android mais maneiro do universo!"
+  location         : "Rio de Janeiro"
+  email            : "rafaraso@gmail.com"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "rafaelraso"
   foursquare       :
   github           :
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "rafaelraso"
   lastfm           :
   linkedin         :
   pinterest        :
@@ -172,7 +173,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Sao_Paulo # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -227,3 +228,19 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+#Custom configurations
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
